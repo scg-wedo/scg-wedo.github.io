@@ -1,6 +1,4 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-
 export interface Props {
 	title: string;
 	description: string;
@@ -11,18 +9,140 @@ const { title, description } = Astro.props;
 ---
 
 <div class="page-heading">
-	<h1>WE-DO</h1>
-	<span class="subheading">{ description }</span>
+	<h1>{ title }</h1>
+	<span class="subheading">WEDO Stay humble, pursue your passion, be fearless<br>and create a purposeful innovation for a better future with us.</span>
 </div>
 <header class="masthead" style="background-image: url('/placeholder-welcome.avif')">
 	<div class="overlay" />
 	<div class="container" />
 </header>
 <style>
-	header {
-		margin: 0em 0 2em;
+
+header.masthead {
+	margin-bottom: 50px;
+	background: no-repeat center center;
+	background-color: #6c757d;
+	background-attachment: scroll;
+	position: relative;
+	background-size: cover;
+	height: 60vh;
+}
+
+header.masthead .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #212529;
+	opacity: 0.8
+}
+.page-heading {
+	position: absolute;
+	color: #d8d8d8;
+	z-index: 1;
+	padding: 0px;
+	margin: 0;
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-heading h1,.site-heading h1 {
+	font-size: 50px;
+	margin-top: 0
+}
+
+.page-heading .subheading,.site-heading .subheading {
+	text-align: center;
+	width: 80%;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.1;
+	display: block;
+	font-family: "Ubuntu",-apple-system,BlinkMacSystemFont;
+}
+
+@media only screen and (min-width: 768px) {
+	.page-heading h1,.site-heading h1 {
+			font-size:80px
 	}
-	h2 {
-		margin: 0.5em 0;
+}
+
+
+header.masthead .page-heading,header.masthead .post-heading,header.masthead .site-heading {
+	padding: 200px 0 150px;
+	color: white
+}
+
+@media only screen and (min-width: 768px) {
+	header.masthead .page-heading,header.masthead .post-heading,header.masthead .site-heading {
+			padding:200px 0
 	}
+}
+
+header.masthead .page-heading,header.masthead .site-heading {
+	text-align: center
+}
+
+header.masthead .page-heading h1,header.masthead .site-heading h1 {
+	font-size: 50px;
+	margin-top: 0
+}
+
+header.masthead .page-heading .subheading,header.masthead .site-heading .subheading {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.1;
+	display: block;
+	margin: 10px 0 0;
+	font-family: "Ubuntu",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+
+@media only screen and (min-width: 768px) {
+	header.masthead .page-heading h1,header.masthead .site-heading h1 {
+			font-size:80px
+	}
+}
+
+header.masthead .post-heading h1 {
+	font-size: 35px
+}
+
+header.masthead .post-heading .meta,header.masthead .post-heading .subheading {
+	line-height: 1.1;
+	display: block
+}
+
+header.masthead .post-heading .subheading {
+	font-size: 24px;
+	font-weight: 600;
+	margin: 10px 0 30px;
+	font-family: "Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+
+header.masthead .post-heading .meta {
+	font-size: 20px;
+	font-weight: 300;
+	font-style: italic;
+	font-family: "Lora",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+
+header.masthead .post-heading .meta a {
+	color: #fff
+}
+
+@media only screen and (min-width: 768px) {
+	header.masthead .post-heading h1 {
+			font-size:55px
+	}
+
+	header.masthead .post-heading .subheading {
+			font-size: 30px
+	}
+}
+
 </style>
