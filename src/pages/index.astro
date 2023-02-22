@@ -1,8 +1,11 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
+import Navigator from '../components/Navigator.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+import 'bootstrap/dist/css/bootstrap.css'
 ---
 
 <!DOCTYPE html>
@@ -11,7 +14,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header title={SITE_TITLE} />
+		<Navigator title="WE-DO" description={SITE_DESCRIPTION} />
+		<Header title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<div class="mx-auto text-center max-w-4xl">
+			<div class="sm:flex sm:justify-center sm:mb-8">
+				<div class="text-sm hover:ring-gray-900/20 leading-6 px-3 py-1 relative ring-1 ring-gray-900/10 rounded-full text-gray-600">
+					<a class="text-indigo-600 font-semibold" href="https://lexingtonthemes.com/free-templates/">
+						<span class="absolute inset-0" aria-hidden="true"></span>
+						<span class="lg:inline block">More free &amp; Premium templates
+							<span aria-hidden="true">→</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<p class="text-black tracking-tight font-extrabold lg:text-5xl text-4xl">A starter template built with Astro and Tailwind CSS for your next project</p><p class="text-slate-500 mt-4 mx-auto lg:text-xl max-w-2xl text-base">Putting together a directory website was a challenge. Superstash lets you focus on the content and makes the entire process effortless.</p>
+		</div>
 		<main>
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>
 			<p>

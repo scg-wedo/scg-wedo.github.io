@@ -1,0 +1,49 @@
+---
+import HeaderLink from './HeaderLink.astro';
+export interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+	<div class="container">
+		<a class="navbar-brand" href="#" style="margin-top: -10px;">
+			<img src="/logo.png" alt="" width="70">
+		</a>
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+			Menu
+			<svg class="svg-inline--fa fa-bars fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg><!-- <i class="fa fa-bars"></i> Font Awesome fontawesome.com -->
+		</button>
+		<div class="navbar-collapse collapse show" id="navbarResponsive" style="">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://medium.com/we-do" target="_blank">
+						<i class="fa-solid fa-flag"></i> Blogs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://github.com/scg-wedo" target="_blank">GitHub</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://twitter.com/scg-wedo" target="_blank">Twitter</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<style>
+	header {
+		margin: 0em 0 2em;
+	}
+	h2 {
+		margin: 0.5em 0;
+	}
+</style>

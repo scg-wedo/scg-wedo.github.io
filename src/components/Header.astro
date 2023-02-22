@@ -1,19 +1,22 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+
+export interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+
 ---
 
-<header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/scg-wedo" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/scg-wedo" target="_blank">GitHub</HeaderLink>
-	</nav>
+<div class="page-heading">
+	<h1>WE-DO</h1>
+	<span class="subheading">{ description }</span>
+</div>
+<header class="masthead" style="background-image: url('/placeholder-welcome.avif')">
+	<div class="overlay" />
+	<div class="container" />
 </header>
 <style>
 	header {
