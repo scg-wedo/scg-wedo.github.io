@@ -289,7 +289,6 @@ header.masthead .overlay {
 	position: absolute;
 	color: white;
 	z-index: 1;
-	width: 100vw;
 	padding: 0px;
 	margin: 0;
 	height: 60vh;
