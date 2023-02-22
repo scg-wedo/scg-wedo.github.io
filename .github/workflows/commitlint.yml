@@ -1,0 +1,31 @@
+name: Lint Commit Messages
+on: [pull_request]
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Cache npm
+        id: cache-npm
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-npm
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}
+
+      - name: Install dependencies
+        run: npm i -g husky @commitlint/cli commitlint-plugin-jira-type commitlint-config-jira-type
+
+      - name: Validate all commits from PR
+        run: commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
+

@@ -1,0 +1,7 @@
+{
+  "plugins": ["commitlint-plugin-jira-type"],
+  "extends": ["jira-type"],
+  "rules": {
+    "jira-type-type-enum": [2, "always", ["build","chore","ci","docs","feat","fix","perf","refactor","revert","style","test"]] 
+  }
+}
