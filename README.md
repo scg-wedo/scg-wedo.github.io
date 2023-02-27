@@ -1,5 +1,8 @@
 # WEDO Blog
 
+- Web Stats [matomo.cloud](https://scg-wedo.matomo.cloud/)
+
+
 ### Development
 
 ```bash
