@@ -14,7 +14,7 @@
     "@astrojs/rss": "^2.1.0",
     "@astrojs/sitemap": "^1.0.1",
     "@types/bootstrap": "^5.2.6",
-    "astro": "^2.0.13",
+    "astro": "^2.0.16",
     "astro-bootstrap": "^0.5.11",
     "astro-google-fonts-optimizer": "^0.2.2",
     "bootstrap": "^5.2.3"
