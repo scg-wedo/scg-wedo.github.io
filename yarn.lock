@@ -812,10 +812,10 @@ astring@^1.8.0:
   resolved "https://registry.npmjs.org/astring/-/astring-1.8.4.tgz"
   integrity sha512-97a+l2LBU3Op3bBQEff79i/E4jMD2ZLFD8rHx9B6mXyB2uQwhJQYfiDqUwtfjF4QA1F2qs//N6Cw8LetMbQjcw==
 
-astro-bootstrap@^0.5.11:
-  version "0.5.11"
-  resolved "https://registry.npmjs.org/astro-bootstrap/-/astro-bootstrap-0.5.11.tgz"
-  integrity sha512-2E/GBuUZR4iwbyIWqACcsZjc9Tohkyj+mAPAwkXLvNUhd0oKJB2r3YVCV4abnmylvrr/JE+gTa1viUKeqwCE7g==
+astro-bootstrap@^0.5.12:
+  version "0.5.12"
+  resolved "https://registry.yarnpkg.com/astro-bootstrap/-/astro-bootstrap-0.5.12.tgz#16274e96e3eb8ed0ec532216e572187b3a885912"
+  integrity sha512-5rsxyNZd944qmY88wBBD/LJ28TaxbWCLzZdDzg+m/EVsxuja2FnN3nv31K0QjucxctMfPARhLhmBxw0Pr+nnOQ==
   dependencies:
     "@types/bootstrap" "^5.2.6"
     astro "^2.0.10"
