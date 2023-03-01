@@ -103,10 +103,10 @@
     sitemap "^7.1.1"
     zod "^3.17.3"
 
-"@astrojs/telemetry@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/@astrojs/telemetry/-/telemetry-2.0.0.tgz"
-  integrity sha512-RnWojVMIsql3GGWDP5pNWmhmBQVkCpxGNZ8yPr2cbmUqsUYGSvErhqfkLfro9j2/STi5UDmSpNgjPkQmXpgnKw==
+"@astrojs/telemetry@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/telemetry/-/telemetry-2.0.1.tgz#6c21b8697ce683a50124c55cbd4751bc883fe580"
+  integrity sha512-68BLBb9CcvQMkWHE6h6VTgm5g6agm3+xm8eb3cdkmX9nP1LSQ/fiD49Jb1qAgCtWcY8yQJiWQQXwcdyStD+VoA==
   dependencies:
     ci-info "^3.3.1"
     debug "^4.3.4"
@@ -114,15 +114,15 @@
     dset "^3.1.2"
     is-docker "^3.0.0"
     is-wsl "^2.2.0"
-    undici "^5.14.0"
+    undici "^5.20.0"
     which-pm-runs "^1.1.0"
 
-"@astrojs/webapi@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@astrojs/webapi/-/webapi-2.0.1.tgz"
-  integrity sha512-aOOHa86W5Ux77A3dS91YrVlSxtBSJsVK4UhvcXHY0gAl0ZrOStSKSBO45gZ6tFi2AiHu3bzpMtZjwrPHtl+cyg==
+"@astrojs/webapi@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/webapi/-/webapi-2.0.2.tgz#24afaeed1ee44576c150ac83983a86ef31c6053e"
+  integrity sha512-uSNtxLuvCWOcwy/DdIy30ocIcIUedEZpyhn1MHW3XuZ3PZHg4PMej3EP38Ns6uKgDKqMyEdscca9bMLuf4cO/w==
   dependencies:
-    undici "5.18.0"
+    undici "5.20.0"
 
 "@babel/code-frame@^7.18.6":
   version "7.18.6"
@@ -830,16 +830,16 @@ astro-google-fonts-optimizer@^0.2.2:
   resolved "https://registry.npmjs.org/astro-google-fonts-optimizer/-/astro-google-fonts-optimizer-0.2.2.tgz"
   integrity sha512-YQxp/ExF3NzUomAGuu1VKecO7/ETRnhnE50gqwAqfpbGPZFj4MYa4XxK1ukBg3R63QmKuE5uurOiKmXiLzttuw==
 
-astro@^2.0.10, astro@^2.0.13:
-  version "2.0.14"
-  resolved "https://registry.npmjs.org/astro/-/astro-2.0.14.tgz"
-  integrity sha512-BiXnHyK3rj5Uz45V5p9jRi0xtJc/zxhCxnXYAekHHF1bVvvoa3aXMwl0GZ3Bc0mxP6vPLmbRcjNKdqfyZn1B3Q==
+astro@^2.0.10, astro@^2.0.16:
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-2.0.16.tgz#ebc24390f6b73edd7e55f08d1ba2573028a7129e"
+  integrity sha512-noQL+bbBZaCLbh7wmpVON+e4kDxymDsIQkEUzzuMKLQodYynxr/Sp7RBA/JnEqXz4CRyd7IrgeQBN0cKOuBtzQ==
   dependencies:
     "@astrojs/compiler" "^1.1.0"
     "@astrojs/language-server" "^0.28.3"
     "@astrojs/markdown-remark" "^2.0.1"
-    "@astrojs/telemetry" "^2.0.0"
-    "@astrojs/webapi" "^2.0.1"
+    "@astrojs/telemetry" "^2.0.1"
+    "@astrojs/webapi" "^2.0.2"
     "@babel/core" "^7.18.2"
     "@babel/generator" "^7.18.2"
     "@babel/parser" "^7.18.4"
@@ -3206,14 +3206,7 @@ typescript@*:
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
-undici@5.18.0:
-  version "5.18.0"
-  resolved "https://registry.npmjs.org/undici/-/undici-5.18.0.tgz"
-  integrity sha512-1iVwbhonhFytNdg0P4PqyIAXbdlVZVebtPDvuM36m66mRw4OGrCm2MYynJv/UENFLdP13J1nPVQzVE2zTs1OeA==
-  dependencies:
-    busboy "^1.6.0"
-
-undici@^5.14.0:
+undici@5.20.0, undici@^5.20.0:
   version "5.20.0"
   resolved "https://registry.npmjs.org/undici/-/undici-5.20.0.tgz"
   integrity sha512-J3j60dYzuo6Eevbawwp1sdg16k5Tf768bxYK4TUJRH7cBM4kFCbf3mOnM/0E3vQYXvpxITbbWmBafaDbxLDz3g==
